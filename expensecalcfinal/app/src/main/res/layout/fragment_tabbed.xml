@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.prashu.expensecalculator.TabbedActivity$PlaceholderFragment">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="23dp"
+                android:text="Amount :"
+                android:textColor="#C71585"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextEnterAmount"
+                android:layout_width="347dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView7"
+                android:layout_alignStart="@+id/textView7"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Amount Here"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editTextEnterAmount"
+                android:layout_alignStart="@+id/editTextEnterAmount"
+                android:layout_below="@+id/editTextEnterAmount"
+                android:layout_marginTop="14dp"
+                android:text="Category :"
+                android:textColor="#C71585"
+                android:textSize="20dp" />
+
+
+
+            <Spinner
+                android:id="@+id/editText2"
+                android:layout_width="149dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_alignStart="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="12dp"
+                app:layout_constraintHorizontal_bias="0.502"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.498" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView3"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_toEndOf="@+id/editText2"
+                android:layout_toRightOf="@+id/editText2"
+                android:text="Source :"
+                android:textColor="#C71585"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="155dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_alignStart="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Cash"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText2"
+                android:layout_alignStart="@+id/editText2"
+                android:layout_below="@+id/editText2"
+                android:layout_marginTop="22dp"
+                android:text="Notes(Optional) :"
+                android:textColor="#C71585"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="347dp"
+                android:layout_height="60dp"
+                android:layout_alignLeft="@+id/textView5"
+                android:layout_alignStart="@+id/textView5"
+                android:layout_below="@+id/textView5"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Description"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4"
+                android:layout_below="@+id/editText4"
+                android:layout_marginTop="15dp"
+                android:text="Date :"
+                android:textColor="#C71585"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="347dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@+id/textView6"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/shape"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Choose Date"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="@color/colorPrimary"
+                android:text="Save" />
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
